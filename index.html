@@ -3,12 +3,41 @@
 <head>
 	<meta charset="utf-8">
 	<title>Ride Care</title>
-	<style type="text/css" src="assets/styles.css"></style>
+	<!-- Link to CSS -->
+	<style type="text/css" src="assets/style/style.css"></style>
 	<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
+<body class>
+    <div id="main-section">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-5">
+                <div class="logo">
+                    <img src="assets/images/bus-logo.svg">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="panel panel-default" id="logIn-form">
+                        <div class="panel-heading">
+
+	
 	<div id="message">
-		<h1>Log in anonymously to use our app</h1>
+		
+		<strong>Log in anonymously to use Ride Care</strong>
+
+		</div></div>
+           
+                            
+        <div id="menu">
+
+        <div class="panel-body">
+                        	                    
 
 		<button><a id="btnLogin" href="#">Log in</a></button>
 		
@@ -16,6 +45,71 @@
 		
 	
 	</div>
+
+
+            <div id="soundDropdown">
+                <div class="row">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Sound
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Bus Stop A</a></li>
+                            <li><a href="#">Bus Stop B</a></li>
+                            <li><a href="#">Bus Stop C</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="dropdown1">
+                <div class="row">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Current Location
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Bus Stop A</a></li>
+                            <li><a href="#">Bus Stop B</a></li>
+                            <li><a href="#">Bus Stop C</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="dropdown2">
+                <div class="row">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Destination
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Bus Stop A</a></li>
+                            <li><a href="#">Bus Stop B</a></li>
+                            <li><a href="#">Bus Stop C</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Google Maps Display Section -->
+
+<div id="mapSection" class="col-md-4 col-md-offset-4">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
 	<script type="text/javascript" src="assets/scripts/auth.js"></script>
 </body>
 </html>
