@@ -3,10 +3,16 @@
 
 
 // Click event for sign in
-	btnLogin.addEventListener('click', e => {
-		document.getElementById("#googleMap");
 
-	});
+var hidden = false;
+    function .() {
+        hidden = !hidden;
+        if(hidden) {
+            document.getElementById('btnLogin').style.visibility = 'hidden';
+        } else {
+            document.getElementById('btnLogin').style.visibility = 'visible';
+        }
+    }
 
 
 
